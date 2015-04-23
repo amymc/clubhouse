@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body{
+  background-color: #f0f0f0;
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.basket{
+  max-width: 750px;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.logo{
+  background: url("./images/ch-logo.png") no-repeat center center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.title{
+  text-shadow: 1px 1px 3px rgba(150, 150, 150, 1);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.intro{
+  font-size: 16px;
+}
+
+.product-table{
+  width: 100%;
+  margin-top: 90px;
+}
+
+.categories-header{
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  width: 90%;
+}
+
+.quantity{
+  width: 100px;
+}
+
+.header-field{
+  display: inline-block;
+}
+
+.quantity.header-field{
+  padding-left: 15px;
+}
+
+.name{
+  width: 350px;
+}
+
+.price{
+  width: 100px;
+}
+
+.change-wrapper{
+  display: inline-block;
+}
+
+.column-title{
+  float: left;
+}
+
+.column-value{
+  float: right;
+}
+
+.quantity-button{
+  display: block;
+  background-color: #999999;
+  color: #fff;
+  width: 20px;
+  text-align: center;
+  margin: 2px;
+  height: 18px;
+  font-size: 14px;
+}
+
+.purchase{
+  font-family: 'Droid Sans', sans-serif;
+  background-color: #3333ff;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  padding: 10px 5px;
+  margin-top: 70px;
+  height: 65px;
+  width: 155px;
+  float: right;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.purchase:hover{
+  background-color:#000066;
+}
+
+.cost-column{
+  text-align: right;
+  width: 75px;
+}
+
+.subtotal-row{
+  color: #666666;
+  margin-top: 60px;
+  height: 35px;
+}
+
+.tax-row{
+  color: #666666;
+  height: 65px;
+}
+
+.product{
+  height: 70px;
+  padding: 15px 0;
+}
+
+.product:hover{
+  background-color: #dddddd;
+}
+
+.product-field{
+  display: inline-block;
+}
+
+
+.cost{
+  width: 80px;
+}
+
+.remove-column{
+  text-align: right;
+  margin-left: 50px;
+}
+
+.remove{
+  font-size: 32px;
+  font-weight: 700;
+  color: #3333ff;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.remove:hover{
+  color: #000066;;
+}
+
+input{
+  height: 38px;
+  width: 45px;
+  font-size: 16px;
+  float: left;
+  margin-top: 2px;
+  text-align: right;
+}
+
+.row{
+  max-width: 645px;
+  overflow: hidden;
+}
+
+.grand-total-row{
+  font-weight: 700;
+}
+
+footer{
+  background-color: #666666;
+  width: 100%;
+  height: 50px;
+  clear: both;
+}
+
+.footer-logo{
+  background: url("./images/chlogo-footer.png") no-repeat center center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+  @media (max-width: 915px){
+
+  .categories-header{
+    width: 100%;
+  }
+
+  .product-table{
+    margin: 90px auto 0;
+    width: 350px;
+  }
+
+  .product{
+    padding-bottom: 80px;
+  }
+
+  .name{
+    width: 100px;
+  }
+
+  .price{
+    width: 65px;
+  }
+
+  .quantity{
+    width: 75px;
+  }
+
+  .remove-column{
+    margin-left: 5px;
+    width: 40px;
+  }
+
+  .cost-column{
+    display: none;
+  }
+
+  .row{
+    margin-right: 20px;
+  }
+}
+
+@media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+
+  .logo{
+    background: url("./images/ch-logo@2x.png") no-repeat center center;
+  }
+  footer{
+    background: url("./images/chlogo-footer@2x.png") no-repeat center center;
+  }
+}
